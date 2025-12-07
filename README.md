@@ -32,9 +32,9 @@ with adjustable threshold control.
 
 The trained model and vectorizer are saved locally and loaded into the Streamlit app for real-time predictions.
 
----
+
 ## 🏗️ Project Structure
-'''
+```
 Email-spam-classifier/
 │
 ├── app.py # Streamlit Web App
@@ -42,15 +42,12 @@ Email-spam-classifier/
 ├── train_model.py # ML Model Training Script
 ├── data/
 │ └── emails.csv # Training Dataset
-'''
+```  
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
-
-    git clone https://github.com/your-username/Email-spam-classifier.git
-    
-    cd Email-spam-classifier
+     cd Email-spam-classifier
 
 2️⃣ Install Dependencies
 
@@ -58,22 +55,23 @@ Email-spam-classifier/
 
 3️⃣ Enable IMAP in Gmail
 
-    Open Gmail
-    Go to Settings → Forwarding & POP/IMAP
-    Enable IMAP
+Open Gmail
+Go to Settings → Forwarding & POP/IMAP
+Enable IMAP
 
 4️⃣ Generate Gmail App Password
 
-    Go to Google Account → Security
-    Enable 2-Step Verification
-    Create App Password → Mail → Windows
-    Copy the 16-digit password
+Go to Google Account → Security
+Enable 2-Step Verification
+Create App Password → Mail → Windows
+Copy the 16-digit password
 
 5️⃣ Create a file named .env in the project root:
     EMAIL_ACCOUNT=your_email@gmail.com
     EMAIL_PASSWORD=your_16_digit_app_password
 
 🏋️ Train the Machine Learning Model
+      
       python train_model.py
 
 
@@ -84,23 +82,23 @@ Email-spam-classifier/
 
 🎚️ Spam Threshold Control
 
-    The app includes a slider (0.1 – 0.9) to control how strict the spam filter is:
-    Lower Threshold (0.3–0.5): More aggressive spam detection
-    Higher Threshold (0.7–0.9): Fewer false positives
+The app includes a slider (0.1 – 0.9) to control how strict the spam filter is:
+Lower Threshold (0.3–0.5): More aggressive spam detection
+Higher Threshold (0.7–0.9): Fewer false positives
 
 
 
 🛠️ Future Improvements
     
-    📊 Promotion vs Spam vs Primary (Multi-class classifier)
-    🧑 User feedback based retraining
-    ☁️ Cloud deployment (Render / AWS / GCP)
-    🔄 Auto refresh inbox
-    🗑️ Auto delete spam emails
-    🔍 Explainable AI (why an email was marked spam)
+📊 Promotion vs Spam vs Primary (Multi-class classifier)
+🧑 User feedback based retraining
+☁️ Cloud deployment (Render / AWS / GCP)
+🔄 Auto refresh inbox
+🗑️ Auto delete spam emails
+🔍 Explainable AI (why an email was marked spam)
 
 👨‍💻 Author
 
-    Gaurav Kumar
-    Machine Learning & AI Enthusiast
-    GitHub: https://github.com/G-Kumar1
+Gaurav Kumar
+Machine Learning & AI Enthusiast
+GitHub: https://github.com/G-Kumar1
